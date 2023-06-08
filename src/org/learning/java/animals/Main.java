@@ -20,12 +20,14 @@ public class Main {
             if (randomNumber == 4) animals[i] = new Passerotto("Passerotto " + i);
         }
 
-        for (int k = 0; k < animals.length; k++) {
-            Animal animal = animals[k];
-                System.out.println("Sono " + animal.getName());
+        for (Animal animal : animals) {
+            System.out.println("Sono " + animal.getName());
+            animal.mangia();
+            animal.verso();
             if (animal instanceof CanFly) Animal.faiVolare((CanFly) animal);
             else if (animal instanceof CanSwim) Animal.faiNuotare((CanSwim) animal);
-            }
+            animal.dormi();
+        }
 
         }
     }
