@@ -13,5 +13,8 @@ public class Main {
 
         gina.fly();
         cane.swim();
+
+        Animal.faiNuotare(cane);
+        Animal.faiVolare(gina);
     }
 }

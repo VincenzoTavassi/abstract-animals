@@ -1,5 +1,5 @@
 package org.learning.java.animals;
 
 public interface CanFly {
-    void fly();
+    public void fly();
 }
