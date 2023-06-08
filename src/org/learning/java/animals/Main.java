@@ -23,6 +23,7 @@ public class Main {
         }
 
         for (Animal animal : animals) {
+            System.out.println("*********************************************");
             System.out.println("Sono " + animal.getName());
             animal.mangia();
             animal.verso();
