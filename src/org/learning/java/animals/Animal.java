@@ -22,4 +22,8 @@ public abstract class Animal {
     public static void faiNuotare(CanSwim animal) {
         animal.swim();
     }
+
+    public String getName() {
+        return name;
+    }
 }
