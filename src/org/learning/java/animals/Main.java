@@ -14,10 +14,12 @@ public class Main {
 
         for (int i = 0; i < animals.length; i++) {
             int randomNumber = random.nextInt(1,5);
-            if (randomNumber == 1) animals[i] = new Aquila("Aquila " + i);
-            if (randomNumber == 2) animals[i] = new Cane("Cane " + i);
-            if (randomNumber == 3) animals[i] = new Delfino("Delfino " + i);
-            if (randomNumber == 4) animals[i] = new Passerotto("Passerotto " + i);
+            switch (randomNumber) {
+                case 1 -> animals[i] = new Aquila("Aquila " + i);
+                case 2 -> animals[i] = new Cane("Cane " + i);
+                case 3 -> animals[i] = new Delfino("Delfino " + i);
+                case 4 -> animals[i] = new Passerotto("Passerotto " + i);
+            }
         }
 
         for (Animal animal : animals) {
